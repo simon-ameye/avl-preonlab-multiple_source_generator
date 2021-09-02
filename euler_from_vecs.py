@@ -14,6 +14,7 @@ dirx = [0, 0, 0]
 diry = [0, 0, 0]
 dirz = [0, 0, 0]
 
+#CODE
 def euler_from_vecs(a=None, b=None):
 	"""
 	Filename: align_vecotrs.py
@@ -51,7 +52,6 @@ def euler_from_vecs(a=None, b=None):
 		z = 0
 	return np.array([x, y, z]) * 180 / np.pi
 
-#CODE
 euler_angle_x = []
 euler_angle_y = []
 euler_angle_z = []
