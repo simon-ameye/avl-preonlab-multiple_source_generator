@@ -8,10 +8,10 @@ Have fun !
 import preonpy
 import math
 
-s = preonpy.current_scene
+s = preonpy.get_scenes()
 
 #INPUT DATA
-#Name = [M21 , M12 , M23]
+name = ['source0', 'source1', 'source2']
 index = [0 , 1 , 2]
 diameter = [0, 0, 0]
 dirx = [0, 0, 0]
@@ -31,6 +31,7 @@ euler_angle_z =  [0, 0, 0]
 #CODE
 for i in index :
 	source = s.create_object("Area source")
+	source["name"] = name[i]
 	source["area type"] = "Circle"
 	source["scale"] = [diameter[i] / 1000, diameter[i] / 1000, diameter[i] / 1000]
 	source["position"] = [posx[i], posy[i], posz[i]]
