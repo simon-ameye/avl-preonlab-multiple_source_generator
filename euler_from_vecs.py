@@ -1,3 +1,10 @@
+"""
+This script will convert direction into euler angles for area source in PreonLab
+Copy and paste standard output result into source placement script.
+Run this script using Python3 (not in PreonLab GUI, which does not support Numpy yet
+Have fun !
+"""
+
 import numpy as np
 import math
 
